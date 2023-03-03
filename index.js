@@ -411,6 +411,13 @@ Output End
 
 // }
 
+// console.log(document.title) 
+// console.log(typeof document.title)
+// document.title = 'Something'
 
 
+console.log(document.body.firstChild)
+console.log(document.body.lastChild)
+console.log(document.body.childNodes)
+console.log(document.body.firstChild === document.body.childNodes[0])
 
