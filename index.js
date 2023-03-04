@@ -416,8 +416,42 @@ Output End
 // document.title = 'Something'
 
 
-console.log(document.body.firstChild)
-console.log(document.body.lastChild)
-console.log(document.body.childNodes)
-console.log(document.body.firstChild === document.body.childNodes[0])
+// console.log(document.body.firstChild)
+// console.log(document.body.lastChild)
+// console.log(document.body.childNodes)
+// console.log(document.body.firstElementChild)
+// console.log(document.body.firstChild === document.body.childNodes[0])
+
+// Element child
+
+// doc = document.body
+// console.log(doc)
+// console.log(doc.firstChild) // gives empty text
+// console.log(doc.firstElementChild) // gives first element
+
+// changecolor = ()=>{
+//     document.body.firstElementChild.style.background = 'red'
+//     document.body.firstElementChild.style.color = 'red'
+// }
+
+// changecolor()
+
+// Table Navigation
+
+table = document.body.firstElementChild
+console.log(table)
+console.log(table.rows)
+console.log(Array.from(table.rows)[0])
+console.log(table.tHead)
+console.log(table.tFoot)
+console.log(table.tBodies)
+console.log(typeof document)
+console.log(typeof window)
+
+
+
+
+
+
+
 
