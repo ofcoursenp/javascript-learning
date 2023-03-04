@@ -532,5 +532,8 @@ Output End
 //     }
 // }
 
+<<<<<<< HEAD
 // Dont use this method
 
+=======
+>>>>>>> 7b31a69da75b2df488c9269c5d3ba14ba92f8a4b
