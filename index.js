@@ -505,3 +505,30 @@ Output End
 // }
 
 // LoadScript("https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js",greet)   
+
+// Pyramid of doom example
+
+// value = true
+
+// if (value){
+//     if(value){
+//         if(value){
+//             if(value){
+//                 if(value){
+//                     if(value){
+//                         if(value){
+//                             if(value){
+//                                 if(value){
+//                                     if(value){                // code starts to increase in right side
+        
+//                                     }                         // bad for readablity + loss track of code
+//                                 }
+//                             }
+//                         }
+//                     }
+//                 }
+//             } 
+//         }
+//     }
+// }
+
