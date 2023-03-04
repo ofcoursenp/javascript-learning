@@ -448,3 +448,31 @@ Output End
 // console.log(typeof document)
 // console.log(typeof window)
 
+// Set time out
+
+// ida = setTimeout(()=>{
+//     alert('This is inside set time out')
+// }, 4000)
+
+// clearTimeout(a)
+
+// Time interval
+
+// idb = setInterval(()=>{
+//     alert('This is in Interval')
+// },3000)
+
+// Event Listner 
+
+btn = document.querySelector('button')
+
+func  = (e)=>{
+    console.log('clicked')
+    console.log(e.target)
+    console.log(e.clientX)
+    console.log(e.clientY)
+}
+
+btn.addEventListener('click',func);  // adds event listner , if clicked console.logs clicked
+
+// // btn.removeEventListener('click',func) // removes event listner
