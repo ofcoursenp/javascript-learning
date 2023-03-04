@@ -438,20 +438,13 @@ Output End
 
 // Table Navigation
 
-table = document.body.firstElementChild
-console.log(table)
-console.log(table.rows)
-console.log(Array.from(table.rows)[0])
-console.log(table.tHead)
-console.log(table.tFoot)
-console.log(table.tBodies)
-console.log(typeof document)
-console.log(typeof window)
-
-
-
-
-
-
-
+// table = document.body.firstElementChild
+// console.log(table)
+// console.log(table.rows)
+// console.log(Array.from(table.rows)[0])
+// console.log(table.tHead)
+// console.log(table.tFoot)
+// console.log(table.tBodies)
+// console.log(typeof document)
+// console.log(typeof window)
 
