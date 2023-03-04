@@ -464,15 +464,44 @@ Output End
 
 // Event Listner 
 
-btn = document.querySelector('button')
+// btn = document.querySelector('button')
 
-func  = (e)=>{
-    console.log('clicked')
-    console.log(e.target)
-    console.log(e.clientX)
-    console.log(e.clientY)
-}
+// func  = (e)=>{
+//     console.log('clicked')
+//     console.log(e.target)
+//     console.log(e.clientX)
+//     console.log(e.clientY)
+// }
 
-btn.addEventListener('click',func);  // adds event listner , if clicked console.logs clicked
+// btn.addEventListener('click',func);  // adds event listner , if clicked console.logs clicked
 
-// // btn.removeEventListener('click',func) // removes event listner
+// // // btn.removeEventListener('click',func) // removes event listner
+
+
+// Asyncronous
+
+// console.log('start')
+// setTimeout(()=>{
+    //     console.log("Hey this is waiting in the queue")
+    // },3000)
+    // console.log('stop')
+    
+// Call backs
+
+// function LoadScript(src,callback){
+//     var script = document.createElement('script')
+//     script.src = src
+//     script.onload = ()=>{
+//     console.log(`Script was loaded ${src}`)
+//     callback(src)
+//     console.log(script)
+//     alert('script was loaded '+src)
+//     }
+//     document.body.appendChild(script)
+// }   
+
+// function greet(src){
+//     console.log('Loaded script '+src)
+// }
+
+// LoadScript("https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js",greet)   
