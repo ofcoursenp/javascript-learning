@@ -809,14 +809,31 @@ Output End
 
 // Set cookie URI encoding
 
-let key = prompt('Enter ur cookie name')
-let value = prompt('Enter ur value name')
+// let key = prompt('Enter ur cookie name')
+// let value = prompt('Enter ur value name')
 
-document.cookie = `${encodeURIComponent(key)}=${encodeURIComponent(value)}`
+// document.cookie = `${encodeURIComponent(key)}=${encodeURIComponent(value)}`
 
-console.log(document.cookie)
+// console.log(document.cookie)
 
-// decodeURIComponent is used to decode encodeURIComponent
+// // decodeURIComponent is used to decode encodeURIComponent
 
 
+
+// Localstorage
+
+a = localStorage.setItem('user',true)
+b = localStorage.getItem('user')
+console.log(b)
+console.log(localStorage)
+localStorage.removeItem('user')
+console.log('item cleared')
+console.log(localStorage)
+localStorage.setItem('user',true)
+localStorage.setItem('user2',false)
+localStorage.setItem('user3',true)
+console.log(localStorage)
+localStorage.clear()
+console.log("Entire storage cleared")
+console.log(localStorage)
 
