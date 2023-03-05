@@ -581,3 +581,54 @@ Output End
 
 // Promise Chaining
 
+// let p1 = new Promise((resolve,reject)=>{
+//     setTimeout(() => {
+//         console.log('Resolved after 3 sec')
+//         resolve(56)
+//     }, 3000);
+// })
+
+// p1.then((value)=>{
+//     console.log(value)
+//     let p2 = new Promise((resolve,reject)=>{
+//         setTimeout(()=>{
+//         resolve('Promise 2')
+//     },3000)
+//     })
+//     return p2
+// }).then((value)=>{
+//     console.log(value)
+//     return 2
+// }).then((value)=>{
+//     console.log(value)
+// })
+
+
+
+// Writing load script function using promises
+
+// const loadscript = (src)=>{
+//     return new Promise((resolve,reject) =>{
+//         let script = document.createElement('script')
+//         script.type = 'text/javascript'
+//         script.src = src
+//         document.body.appendChild(script)
+//         script.onload = ()=>{
+//             console.log('loaded')
+//             resolve(1)
+//         }
+//         script.onerror = ()=>{
+//             console.log('cant get data')
+//             reject(0)
+//         }
+
+//     })
+// }
+
+// let p1 = loadscript('https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js')
+// p1.then((value)=>{
+//     console.log(value)
+// }).catch((err)=>{
+//     console.log(err)
+// })
+
