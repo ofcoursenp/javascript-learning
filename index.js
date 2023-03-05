@@ -741,20 +741,39 @@ Output End
 
 // Fetch API
 
-let p = fetch('https://goweather.herokuapp.com/weather/Ny')
+// let p = fetch('https://goweather.herokuapp.com/weather/Ny')
 
-p.then((value1)=>{
-    console.log(value1.status)
-    console.log(value1.ok)
-    return value1.json()
-}).then((value2)=>{
-    console.log(value2)
-})
-
-
-// Fetch POST
+// p.then((value1)=>{
+//     console.log(value1.status)
+//     console.log(value1.ok)
+//     return value1.json()
+// }).then((value2)=>{
+//     console.log(value2)
+// })
 
 
+// // Fetch POST
+
+
+// let options = {
+//     method: 'POST',
+//     headers: {
+//     'content-type':'application/json'
+//     },
+//     body:JSON.stringify({
+//         title:'someone',
+//         body:'accessing',
+//         userId:1
+//     })
+// }
+
+// fetch('https://jsonplaceholder.typicode.com/posts',options).then((response)=>{
+//     return response.json()
+// }).then((json)=>{
+//     console.log(json)
+// })
+
+const ToDoList = async ()=>{
 let options = {
     method: 'POST',
     headers: {
@@ -767,8 +786,12 @@ let options = {
     })
 }
 
-fetch('https://jsonplaceholder.typicode.com/posts',options).then((response)=>{
-    return response.json()
-}).then((json)=>{
-    console.log(json)
+data = await fetch('https://jsonplaceholder.typicode.com/posts',options)
+return await data.json()
+
+}
+
+ToDoList().then((value)=>{
+    console.log(value)
 })
+
