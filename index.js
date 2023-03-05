@@ -718,3 +718,22 @@ Output End
 // a.then((value)=>{
 //     console.log(value)
 // })
+
+// try catch finally
+
+try{
+    console.log(a) 
+    
+}catch(err){
+    console.log(err)
+}
+
+
+try{
+    console.log(a) 
+    
+}catch(err){
+    console.log(eerr)
+}finally{
+console.log('This is an error') // runs regardless
+}
