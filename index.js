@@ -773,25 +773,50 @@ Output End
 //     console.log(json)
 // })
 
-const ToDoList = async ()=>{
-let options = {
-    method: 'POST',
-    headers: {
-    'content-type':'application/json'
-    },
-    body:JSON.stringify({
-        title:'someone',
-        body:'accessing',
-        userId:1
-    })
-}
+// const ToDoList = async ()=>{
+// let options = {
+//     method: 'POST',
+//     headers: {
+//     'content-type':'application/json'
+//     },
+//     body:JSON.stringify({
+//         title:'someone',
+//         body:'accessing',
+//         userId:1
+//     })
+// }
 
-data = await fetch('https://jsonplaceholder.typicode.com/posts',options)
-return await data.json()
+// data = await fetch('https://jsonplaceholder.typicode.com/posts',options)
+// return await data.json()
 
-}
+// }
 
-ToDoList().then((value)=>{
-    console.log(value)
-})
+// ToDoList().then((value)=>{
+//     console.log(value)
+// })
+
+
+// Cookies in Javascript
+
+// console.log(document.cookie)
+// document.cookie = 'name=testCookie'
+// console.log(document.cookie)
+
+// // Upating cookie 
+// console.log(document.cookie)
+// document.cookie = 'name=testCase2' // updates the name=testCooke to name=testCooke2
+// console.log(document.cookie)
+
+// Set cookie URI encoding
+
+let key = prompt('Enter ur cookie name')
+let value = prompt('Enter ur value name')
+
+document.cookie = `${encodeURIComponent(key)}=${encodeURIComponent(value)}`
+
+console.log(document.cookie)
+
+// decodeURIComponent is used to decode encodeURIComponent
+
+
 
