@@ -721,19 +721,54 @@ Output End
 
 // try catch finally
 
-try{
-    console.log(a) 
+// try{
+//     console.log(a) 
     
-}catch(err){
-    console.log(err)
-}
+// }catch(err){
+//     console.log(err)
+// }
 
 
-try{
-    console.log(a) 
+// try{
+//     console.log(a) 
     
-}catch(err){
-    console.log(eerr)
-}finally{
-console.log('This is an error') // runs regardless
+// }catch(err){
+//     console.log(eerr)
+// }finally{
+// console.log('This is an error') // runs regardless
+// }
+
+
+// Fetch API
+
+let p = fetch('https://goweather.herokuapp.com/weather/Ny')
+
+p.then((value1)=>{
+    console.log(value1.status)
+    console.log(value1.ok)
+    return value1.json()
+}).then((value2)=>{
+    console.log(value2)
+})
+
+
+// Fetch POST
+
+
+let options = {
+    method: 'POST',
+    headers: {
+    'content-type':'application/json'
+    },
+    body:JSON.stringify({
+        title:'someone',
+        body:'accessing',
+        userId:1
+    })
 }
+
+fetch('https://jsonplaceholder.typicode.com/posts',options).then((response)=>{
+    return response.json()
+}).then((json)=>{
+    console.log(json)
+})
