@@ -632,3 +632,51 @@ Output End
 //     console.log(err)
 // })
 
+
+// Promise API
+
+p1 = new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+        console.log("p1 done")
+        // resolve(1)
+        resolve(1)
+    },1000)
+
+})
+
+p2 = new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+        console.log("p2 done")
+        // console.log("Promise rejected")
+        // reject(new Error("Rejected"))
+        reject(2)
+    },2000)
+
+})
+
+p3 = new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+        console.log("p3 done")
+        resolve(3)
+    },3000)
+
+})
+
+
+// let promise_all = Promise.all([p1,p2,p3])
+
+// let promise_all_settled = Promise.allSettled([p1,p2,p3])
+
+// let promise_race = Promise.race([p1,p2,p3])  // returns first promise 
+
+// let promise_any = Promise.any([p1,p2,p3])  // returns first resolved promise
+
+// let promise_resolved = Promise.resolve(9)
+
+let promise_reject = Promise.reject(new Error("New error"))
+
+
+promise_resolved.then((value)=>{
+    console.log(value)
+})
+
