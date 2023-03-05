@@ -635,48 +635,86 @@ Output End
 
 // Promise API
 
-p1 = new Promise((resolve,reject)=>{
-    setTimeout(()=>{
-        console.log("p1 done")
-        // resolve(1)
-        resolve(1)
-    },1000)
+// p1 = new Promise((resolve,reject)=>{
+//     setTimeout(()=>{
+//         console.log("p1 done")
+//         // resolve(1)
+//         resolve(1)
+//     },1000)
 
-})
+// })
 
-p2 = new Promise((resolve,reject)=>{
-    setTimeout(()=>{
-        console.log("p2 done")
-        // console.log("Promise rejected")
-        // reject(new Error("Rejected"))
-        reject(2)
-    },2000)
+// p2 = new Promise((resolve,reject)=>{
+//     setTimeout(()=>{
+//         console.log("p2 done")
+//         // console.log("Promise rejected")
+//         // reject(new Error("Rejected"))
+//         reject(2)
+//     },2000)
 
-})
+// })
 
-p3 = new Promise((resolve,reject)=>{
-    setTimeout(()=>{
-        console.log("p3 done")
-        resolve(3)
-    },3000)
+// p3 = new Promise((resolve,reject)=>{
+//     setTimeout(()=>{
+//         console.log("p3 done")
+//         resolve(3)
+//     },3000)
 
-})
-
-
-// let promise_all = Promise.all([p1,p2,p3])
-
-// let promise_all_settled = Promise.allSettled([p1,p2,p3])
-
-// let promise_race = Promise.race([p1,p2,p3])  // returns first promise 
-
-// let promise_any = Promise.any([p1,p2,p3])  // returns first resolved promise
-
-// let promise_resolved = Promise.resolve(9)
-
-let promise_reject = Promise.reject(new Error("New error"))
+// })
 
 
-promise_reject.then((value)=>{
-    console.log(value)
-})
+// // let promise_all = Promise.all([p1,p2,p3])
 
+// // let promise_all_settled = Promise.allSettled([p1,p2,p3])
+
+// // let promise_race = Promise.race([p1,p2,p3])  // returns first promise 
+
+// // let promise_any = Promise.any([p1,p2,p3])  // returns first resolved promise
+
+// // let promise_resolved = Promise.resolve(9)
+
+// let promise_reject = Promise.reject(new Error("New error"))
+
+
+// promise_reject.then((value)=>{
+//     console.log(value)
+// })
+
+
+
+// Async and await
+
+// async function user(){
+//     return "User Id 30"
+// }
+
+// user().then((value)=>{
+//     console.log(value)
+// })
+
+// async function getWeather(){
+//     w1 = new Promise((resolved,reject)=>{
+//         setTimeout(()=>{
+//             resolved("13 Degree celcius")
+//         },1000)
+//     })
+
+//     w2 = new Promise((resolved,reject)=>{
+//         setTimeout(()=>{
+//             resolved("20 Degree celcius")
+//         },2000)
+//     })
+
+//     console.log("Fetching washington weather")
+//     let washington = await w1 // waits for this to finish then proceds to next line
+//     console.log("Fetching New york weather")
+//     let new_york = await w2  // waits for this to finish then proceds to next line
+//     console.log("Done fetching")
+//     return [washington,new_york]
+
+// }
+
+// a = getWeather()
+// a.then((value)=>{
+//     console.log(value)
+// })
