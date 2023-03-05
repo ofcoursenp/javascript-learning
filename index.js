@@ -676,7 +676,7 @@ p3 = new Promise((resolve,reject)=>{
 let promise_reject = Promise.reject(new Error("New error"))
 
 
-promise_resolved.then((value)=>{
+promise_reject.then((value)=>{
     console.log(value)
 })
 
