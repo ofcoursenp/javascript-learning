@@ -532,8 +532,52 @@ Output End
 //     }
 // }
 
-<<<<<<< HEAD
-// Dont use this method
+// Promises
 
-=======
->>>>>>> 7b31a69da75b2df488c9269c5d3ba14ba92f8a4b
+// let promise = new Promise((resolve,reject)=>{
+//     resolve(58)
+//     alert("Thi is an alert in promise")
+// });
+
+// console.log('Hello one')
+// setTimeout(() => {
+//     console.log("Hello in 3 sec")
+// }, 3000);
+
+// console.log('Hello two')
+// console.log(promise)
+
+
+// let promise2 = new Promise((resolve,reject)=>{
+//     console.log("Promise is pending")
+//     setTimeout(()=>{
+//         // resolve(true)
+//         reject(new Error("promise was not fullfiled"))
+//         // console.log("Promise is Rejected")
+//     },3000)
+
+// })
+
+// let promise3 = new Promise((resolve,reject)=>{
+//     console.log("Promise is pending")
+//     setTimeout(()=>{
+//         resolve(true)
+//         // console.log("Promise is fullfiled")
+//     },3000)
+
+// })
+
+// promise2.catch((err)=>{
+//     console.log(err)
+// })
+
+// promise3.then((value)=>{
+//     console.log(value)
+// })
+
+
+// console.log(promise2,promise3)
+
+
+// Promise Chaining
+
