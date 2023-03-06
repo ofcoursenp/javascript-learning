@@ -14,9 +14,11 @@ for (let i = 0; i < keys.length; i++) {
 }}
 
 function getdata(){
+    titlediv = document.getElementById('title')
+    descriptiondiv = document.getElementById('description')
+    title = titlediv.value
+    description = descriptiondiv.value
 
-    title = prompt("Title")
-    description = prompt("Description")
     if(title !== '' && description != ''){
         localStorage.setItem(title,description)
     }
@@ -28,13 +30,13 @@ function getdata(){
     <button class="btn btn-danger" onclick="remove('${title}')">Remove?</button>
     </div>`
     
+    titlediv.value = ''
+    descriptiondiv.value = ''
 }
 
 
 function remove(title){
     localStorage.removeItem(title)
-
-    
     div = document.getElementById('todo')
     div.innerHTML = ''
     let keys = Object.keys(localStorage);

@@ -25,9 +25,24 @@
       </nav>
     <h1 id="heading">To Do List</h1>
 
-    <button style="display: flex; justify-content: center; align-items: center; margin-left: 45%; margin-right:45%; margin-bottom: 1%; padding-left: 20px; padding-right: 20px;" type="button" class="btn btn-primary" onclick="getdata()">Add New Task</button>
+    <!-- <button style="display: flex; justify-content: center; align-items: center; margin-left: 45%; margin-right:45%; margin-bottom: 1%; padding-left: 20px; padding-right: 20px;" type="button" class="btn btn-primary" onclick="getdata()">Add New Task</button> -->
 
 
+    <form class="container">
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Title</label>
+        <input type="email" class="form-control" id="title" aria-describedby="emailHelp" placeholder="Title">
+        <div id="emailHelp" class="form-text"></div>
+      </div>
+
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Description</label>
+        <input placeholder='Description' type="text" class="form-control" id="description">
+      </div>
+      <button type="button" class="btn btn-primary" style="margin-bottom: 8px;"  onclick="getdata()">Submit</button>
+    </form>
+
+    
     <div id="todo">
 
     <!-- <div class="alert alert-primary container py-3" role="alert">
@@ -46,10 +61,6 @@
 
 
 <script src="todolist.js"></script>
-
-
-
-
 
 
 
