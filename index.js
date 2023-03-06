@@ -841,34 +841,45 @@ Output End
 
 // object oriented programming
 
-let a = {
-    name:'someone',
-    date:'2023',
-     run:()=>{
-         console.log("Running") // this run is more valued than a.__proto__ = p
-     }
-}
+// let a = {
+//     name:'someone',
+//     date:'2023',
+//      run:()=>{
+//          console.log("Running") // this run is more valued than a.__proto__ = p
+//      }
+// }
 
-console.log(a)
-console.log(a.run())
+// console.log(a)
+// console.log(a.run())
 
-let p = {
-    name:'another person',
-    date:'2023',
-    run: ()=>{
-        console.log('p is running')
+// let p = {
+//     name:'another person',
+//     date:'2023',
+//     run: ()=>{
+//         console.log('p is running')
 
+//     }
+// }
+
+// console.log(p)
+
+// a.__proto__ = p
+// a.run()
+// p.run()
+
+// p.__proto__ = {
+//     name2:'Jhon smith'
+// }
+
+// console.log(a.name2) // goes in a first then goes to a.__proto__ then it sees p then it goes to p.__proto__ then it finds name2 and console.log's it
+
+class sendForm{
+    Submit(){
+        alert("This form has been send to database")
+    }
+
+    cancle(){
+        alert("This form has been cancled")
     }
 }
 
-console.log(p)
-
-a.__proto__ = p
-a.run()
-p.run()
-
-p.__proto__ = {
-    name2:'Jhon smith'
-}
-
-console.log(a.name2) // goes in a first then goes to a.__proto__ then it sees p then it goes to p.__proto__ then it finds name2 and console.log's it
