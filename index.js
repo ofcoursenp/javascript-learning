@@ -943,3 +943,29 @@ Output End
 // bravo = new Dog()
 // bravo.sleep()
 
+// super and method overriding
+
+
+class Animal{
+    bark(){
+        console.log("Barking")
+    }
+
+    sleep(){
+        console.log("sleeping")
+    }
+}
+
+class Dog extends Animal{    // inhertitating Animal class 
+    eat(){
+        console.log("Eating")
+    }
+    sleep(){
+        super.sleep()           // Calls Animal sleep func
+        console.log("I am a dog i only sleep in night") 
+    }
+}
+
+bravo = new Dog()
+bravo.sleep()
+
