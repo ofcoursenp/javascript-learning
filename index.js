@@ -875,11 +875,23 @@ Output End
 
 class sendForm{
     Submit(){
-        alert("This form has been send to database")
+        console.log(this.name + " This form has been send to database")
     }
 
     cancle(){
-        alert("This form has been cancled")
+        console.log(this.name + " This form has been cancled")
+    }
+    fill(name){
+        this.name = name
     }
 }
+
+let user1 = new sendForm()
+user1.fill('user_1')
+let user2 = new sendForm()
+user2.fill('user_2')
+
+user1.Submit()
+user2.Submit()
+user2.cancle()
 
