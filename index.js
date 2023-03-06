@@ -822,18 +822,53 @@ Output End
 
 // Localstorage
 
-a = localStorage.setItem('user',true)
-b = localStorage.getItem('user')
-console.log(b)
-console.log(localStorage)
-localStorage.removeItem('user')
-console.log('item cleared')
-console.log(localStorage)
-localStorage.setItem('user',true)
-localStorage.setItem('user2',false)
-localStorage.setItem('user3',true)
-console.log(localStorage)
-localStorage.clear()
-console.log("Entire storage cleared")
-console.log(localStorage)
+// a = localStorage.setItem('user',true)
+// b = localStorage.getItem('user')
+// console.log(b)
+// console.log(localStorage)
+// localStorage.removeItem('user')
+// console.log('item cleared')
+// console.log(localStorage)
+// localStorage.setItem('user',true)
+// localStorage.setItem('user2',false)
+// localStorage.setItem('user3',true)
+// console.log(localStorage)
+// localStorage.clear()
+// console.log("Entire storage cleared")
+// console.log(localStorage)
 
+
+
+// object oriented programming
+
+let a = {
+    name:'someone',
+    date:'2023',
+     run:()=>{
+         console.log("Running") // this run is more valued than a.__proto__ = p
+     }
+}
+
+console.log(a)
+console.log(a.run())
+
+let p = {
+    name:'another person',
+    date:'2023',
+    run: ()=>{
+        console.log('p is running')
+
+    }
+}
+
+console.log(p)
+
+a.__proto__ = p
+a.run()
+p.run()
+
+p.__proto__ = {
+    name2:'Jhon smith'
+}
+
+console.log(a.name2) // goes in a first then goes to a.__proto__ then it sees p then it goes to p.__proto__ then it finds name2 and console.log's it
