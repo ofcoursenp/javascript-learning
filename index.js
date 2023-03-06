@@ -873,25 +873,73 @@ Output End
 
 // console.log(a.name2) // goes in a first then goes to a.__proto__ then it sees p then it goes to p.__proto__ then it finds name2 and console.log's it
 
-class sendForm{
-    Submit(){
-        console.log(this.name + " This form has been send to database")
-    }
+// class sendForm{
+//     Submit(){
+//         console.log(this.name + " This form has been send to database")
+//     }
 
-    cancle(){
-        console.log(this.name + " This form has been cancled")
-    }
-    fill(name){
-        this.name = name
-    }
-}
+//     cancle(){
+//         console.log(this.name + " This form has been cancled")
+//     }
+//     fill(name){
+//         this.name = name
+//     }
+// }
 
-let user1 = new sendForm()
-user1.fill('user_1')
-let user2 = new sendForm()
-user2.fill('user_2')
+// let user1 = new sendForm()
+// user1.fill('user_1')
+// let user2 = new sendForm()
+// user2.fill('user_2')
 
-user1.Submit()
-user2.Submit()
-user2.cancle()
+// user1.Submit()
+// user2.Submit()
+// user2.cancle()
+
+// Constructor
+
+// class BookReservation{
+//     constructor(time,phonenum){
+//         this.time = time
+//         this.phonenum = phonenum
+//     }
+//     book(){
+//         console.log(`Your resrvation was booked on ${this.time} , Your phone number is ${this.phonenum}`)
+//     }
+
+//     cancle(){
+//         console.log(`Your resrvation was cancled on ${this.time} , And you were contacted on  ${this.phonenum}`)
+//     }
+// }
+
+
+// table1 = new BookReservation('2023/4/2',+12303435934)
+// table2 = new BookReservation('2023/4/3',+12303435934)
+
+// table1.book()
+// table1.cancle()
+// table2.book()
+// table2.cancle()
+
+
+
+// Inhertiance
+
+// class Animal{
+//     bark(){
+//         console.log("Barking")
+//     }
+
+//     sleep(){
+//         console.log("sleeping")
+//     }
+// }
+
+// class Dog extends Animal{    // inhertitating Animal class 
+//     eat(){
+//         console.log("Eating")
+//     }
+// }
+
+// bravo = new Dog()
+// bravo.sleep()
 
