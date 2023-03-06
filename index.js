@@ -972,45 +972,86 @@ Output End
 
 // IIFE immediately Invoked Function Expression
 
-let a = (()=>{
-    return new Promise((resolve,reject)=>{
-        setTimeout(()=>{
-            resolve(300)
-        },3000)
-    })
-})
+// let a = (()=>{
+//     return new Promise((resolve,reject)=>{
+//         setTimeout(()=>{
+//             resolve(300)
+//         },3000)
+//     })
+// })
 
 
-let f = async ()=>{
-    b = await a()
-    console.log(b)
-    c = await a()
-    console.log(c)
-    d = await a()
-    console.log(d)
+// let f = async ()=>{
+//     b = await a()
+//     console.log(b)
+//     c = await a()
+//     console.log(c)
+//     d = await a()
+//     console.log(d)
 
-}
+// }
  
-f()    // This execution of code is not recommended even tho it is used , Thats why we use IIFE , 
+// f()    // This execution of code is not recommended even tho it is used , Thats why we use IIFE , 
 
-// IIFE syntax = 
+// // IIFE syntax = 
 
-let iife = (()=>{
-    return new Promise((resolve,reject)=>{
-        setTimeout(()=>{
-            resolve(420)
-        },3000)
-    })
+// let iife = (()=>{
+//     return new Promise((resolve,reject)=>{
+//         setTimeout(()=>{
+//             resolve(420)
+//         },3000)
+//     })
 
-})
+// })
 
 
-(async()=>{
-    let iife1 = await iife()
-    console.log(b)
-    let iife2 = await iife()
-    let iife3 = await iife()  // Just for local scope
-})
+// (async()=>{
+//     let iife1 = await iife()
+//     console.log(b)
+//     let iife2 = await iife()
+//     let iife3 = await iife()  // Just for local scope
+// })
+
+
+// Destructuring and spread operator
+
+// let arr = [1,2,3,4]
+// let [a,b,c,d] = arr
+
+// console.log(a,b,c,d)  // 1 2 3 4
+
+// let newarr = [1, 2, 3, 4, 5, 6, 7]
+
+// let [a,b,c,d,...rest] = newarr
+
+// console.log(a,b,c,d,rest)  // keeps rest value in rest variable
+
+// let newarr2 = [1, 2, 3, 4, 5, 6, 7]
+
+// let [a, , , ...rest] = newarr2  // skips 2 variable or 2 value in the array 
+// console.log(a,rest)
+
+// Same can be done in objects
+
+// Spread
+
+
+
+// let arr3 = [1, 2, 3, 4, 5, 6, 7]
+// let obj1 = {...arr3}
+// console.log(obj1)   // {0: 1, 1: 2, 2: 3, 3: 4, 4: 5, 5: 6, 6: 7}
+// // Assigns value in index
+ 
+
+// Example : 
+
+// arr4 = [1,2,3]
+
+// function sum(a,b,c){
+//     return a+b+c
+// }
+
+// console.log(sum(...arr4))  // returns 6 because 1+2+3 = 6
 
 
 
