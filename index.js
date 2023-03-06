@@ -946,26 +946,71 @@ Output End
 // super and method overriding
 
 
-class Animal{
-    bark(){
-        console.log("Barking")
-    }
+// class Animal{
+//     bark(){
+//         console.log("Barking")
+//     }
 
-    sleep(){
-        console.log("sleeping")
-    }
+//     sleep(){
+//         console.log("sleeping")
+//     }
+// }
+
+// class Dog extends Animal{    // inhertitating Animal class 
+//     eat(){
+//         console.log("Eating")
+//     }
+//     sleep(){
+//         super.sleep()           // Calls Animal sleep func
+//         console.log("I am a dog i only sleep in night") 
+//     }
+// }
+
+// bravo = new Dog()
+// bravo.sleep()
+
+
+// IIFE immediately Invoked Function Expression
+
+let a = (()=>{
+    return new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+            resolve(300)
+        },3000)
+    })
+})
+
+
+let f = async ()=>{
+    b = await a()
+    console.log(b)
+    c = await a()
+    console.log(c)
+    d = await a()
+    console.log(d)
+
 }
+ 
+f()    // This execution of code is not recommended even tho it is used , Thats why we use IIFE , 
 
-class Dog extends Animal{    // inhertitating Animal class 
-    eat(){
-        console.log("Eating")
-    }
-    sleep(){
-        super.sleep()           // Calls Animal sleep func
-        console.log("I am a dog i only sleep in night") 
-    }
-}
+// IIFE syntax = 
 
-bravo = new Dog()
-bravo.sleep()
+let iife = (()=>{
+    return new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+            resolve(420)
+        },3000)
+    })
+
+})
+
+
+(async()=>{
+    let iife1 = await iife()
+    console.log(b)
+    let iife2 = await iife()
+    let iife3 = await iife()  // Just for local scope
+})
+
+
 
