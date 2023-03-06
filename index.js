@@ -1053,5 +1053,3 @@ Output End
 
 // console.log(sum(...arr4))  // returns 6 because 1+2+3 = 6
 
-
-
